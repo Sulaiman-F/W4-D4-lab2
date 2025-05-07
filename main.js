@@ -32,7 +32,7 @@ studint.forEach((curr) => {
     img.style.width = "20%"
     fname.innerText = `the name is ${curr.fristname} and the age is ${curr.age}`
     if (curr.gaender === "male") {
-        fname.style.backgroundColor = "red"
+        fname.style.backgroundColor = "blue"
     } else {
         fname.style.backgroundColor = "pink"
     }
