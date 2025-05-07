@@ -27,19 +27,16 @@ let body = document.body
 studint.forEach((curr) => {
     let img = document.createElement("img")
     let fname = document.createElement("p")
-    let age = document.createElement("p")
     img.src = curr.url
     img.style.height = "20%"
     img.style.width = "20%"
-    fname.innerText = curr.fristname
-    age.innerText = curr.age
+    fname.innerText = `the name is ${curr.fristname} and the age is ${curr.age}`
     if (curr.gaender === "male") {
         fname.style.backgroundColor = "red"
     } else {
         fname.style.backgroundColor = "pink"
     }
     body.appendChild(fname)
-    body.appendChild(age)
     body.appendChild(img)
 })
 
